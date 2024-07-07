@@ -30,7 +30,7 @@ app.get("/route-b", requiresAuth(), async (_req, res) => {
   });
 });
 
-app.get("/route-c", async (_req, res) => {
+app.post("/route-c", async (_req, res) => {
   res.status(200).json({
     message: "k8s-demo-b",
     path: "route-c",
